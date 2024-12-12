@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>nhat9</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Đăng Nhập</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            color: #fff;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-size: 24px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            transition: border-color 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #ffcc00;
+            outline: none;
+        }
+        .input-group input::placeholder {
+            color: #aaa;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            color: #222;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #e6b800;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Đăng Nhập</h2>
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Tên Đăng Nhập" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Mật Khẩu" required>
+            </div>
+            <button type="submit" class="btn">Đăng Nhập</button>
+        </form>
+        <div class="footer">
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
